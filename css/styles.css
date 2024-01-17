@@ -114,9 +114,9 @@ span.nombre:hover {
     background-position: center center;
     height: calc(100vh - 100px);
 
-    display: flex;
+   /*  display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 .presentacion {
@@ -137,7 +137,7 @@ span.nombre:hover {
     margin-bottom: 5px;
 }
 
-/* ********************************** */
+/* ******** Datos sobre mi ******** */
 #sobremi {
     background-color: #fecec1;
     padding: 50px 0;
