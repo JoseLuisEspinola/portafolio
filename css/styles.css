@@ -35,14 +35,17 @@ nav.abajo {
 
 .logo {
     height: 40px;
+    border-radius: 2px;
     margin-right: 20px;
+    transition: 1s;
 }
 
 .nombre {
     color: white;
     font-size: 18px;
     text-transform: uppercase;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    transition: 0.5s
 }
 
 nav ul {
@@ -93,15 +96,166 @@ nav.abajo ul li a:hover {
     color:blue;
 }
 
-section {
-    margin-top: 100px;
-    background: url(../img/fondo2.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: calc(100vh - 80px);
+img.logo:hover {
+    transform: scale(1.4);
+    rotate: 360deg;
 }
 
+span.nombre:hover {
+    font-size: 1.8rem;
+    color: red;
+}
 
+/* **** Zona central de la primer pagina **** */ 
+#zona1{
+    margin-top: 100px;
+    background: url(../img/fondo5.jpg) no-repeat;   /* Es para que sea SOLO una imagen */
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 100px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentacion {
+    max-width: 100%;
+    text-align: center;
+}
+  
+.presentacion h1 {
+    color: #FF4081;
+    font-size: 6rem;
+    margin-bottom: 10px;
+    text-shadow: 6px 4px #070707;
+}
+  
+.presentacion p {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+/* ********************************** */
+#sobremi {
+    background-color: #fecec1;
+    padding: 50px 0;
+/*     text-align: center; */
+  }
+  
+.sobremi-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  
+.sobremi-content img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+  
+section h2 {   /* todos los h2 */
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: blue;
+}
+  
+#proyectos{
+    background-color: #e6d3ba;
+    padding: 50px 0;
+}
+
+.proyect {
+    /* padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+  
+.proyect img {
+    height: 40vh;
+    width: 40%;  /* la imagen ocupa el 40% de la fila */
+    border-radius: 10px;
+    margin-right: 20px;   /* Espaciado entre la imagen y el texto (ajusta según sea necesario) */
+}
+
+.proyect-content {
+    flex: 1; /* ocupa todo el espacion restante de la fila */
+}
+
+/* Añadir márgenes o estilos adicionales según sea necesario */
+.proyect h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.proyect p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* ******* Footer ****** */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+p.contac {
+    font-size: 2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #333;
+    padding-bottom: 10px;
+    text-shadow: #2fcdcd 2px 2px;
+}
+
+p.mimail {
+    font-size: 1.2rem;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+  
+.social-links li {
+    color: #ffffff;
+    padding: 8px 10px;
+}
+
+.social-links a {
+    font-size: 1.4rem;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+  
+.social-links a:hover {
+    color: #2fcdcd;
+    background-color: #333;
+}
+
+p.copying {
+    font-size: 1.1rem;
+    font-stretch:ultra-expanded;
+    color:rgb(119, 194, 109)
+}
+
+/* **** Meedia Query **** */
 /* medias query */
 @media (max-width: 952px){
     .enlace{

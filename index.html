@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Ccompatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Responsive</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <title>Portafolio Digital</title>
 </head>
 
 <body>
+    <!-- Barra de navegacion o NavBar -->
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
@@ -17,264 +17,87 @@
         </label>
         <a href="#" class="enlace">
             <img src="./img/NewSoft.png" alt="Imagen Logo" class="logo">
-            <span class="nombre">New Soft</span>
+            <span class="nombre">Porfolio Digital</span>
         </a>
         <ul>
             <li><a href="#">Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Portafolio</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#sobremi">Sobre Mi</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#">Formulario</a></li>
+            <li><a href="#piedepagina">Contacto</a></li>
         </ul>
     </nav>
 
-    <section id="zona1">
-    </section>
-
     <!-- JavaScript donde se captura la parte de arriba de la pagina: header-->
     <script type="text/javascript">
-    window.addEventListener("scroll", function(){
-        var header = document.querySelector("nav");
-        header.classList.toggle("abajo", window.scrollY>0);
-    })
-</script>    
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("nav");
+            header.classList.toggle("abajo", window.scrollY>0);
+        })
+    </script>    
+
+    <!-- Zona central de la primer pagina -->
+    <section id="zona1">
+        <div class="presentacion">
+            <h1>La Revolución Informatica:</h1>
+            <p class="renglon1">Un pilar fundamental en la</p>
+            <p class="renglon2">revolución digital que está</p>
+            <p class="renglon3">redefiniendo nuestro mundo.</p>
+        </div>
+    </section>
 
 
+    <!-- Seccion "sobre mi"  -->
+    <section id="sobremi">
+        <div class="container">
+            <h2>Sobre mí</h2>
+            <div class="sobremi-content">
+                <img src="./img/telegram_logo.png" alt="Mi foto de perfil">
+                <p class="nosoyrobot">No soy un Robot, soy un desarrolador 
+                    Full Stack. Apacionado por el diseño Web y la Programación.</p>
+                <p class="historiamia">He estudiado una carrera de Ingeniería
+                    de Sistemas (hasta 3er año), donde he visto lenguajes de 
+                    programacion como Turbo Pascal, RmCobol y Visual FoxPro 9 
+                    (este último, lo sigo viendo en la actualidad).</p>
+                <p class="actualidad">Hoy estoy incursionando en el sesarrollo
+                    Web Full Stack, con HTML, CSS, BOOTSTRAP, JAVASCRIP, JAVA y MYSQL.</p>
+            </div>
+        </div>
+    </section>
 
+    <section id="proyectos">
+        <div class="container">
+            <h2>Proyectos</h2>
+            <div class="proyect">
+                <img src="./img/fondo1.jpg" alt="Captura de pantalla del proyecto 1">
+                <h3>Proyecto 1</h3>
+                <p>Descripción del proyecto 1. Incluye las tecnologías utilizadas, los desafíos enfrentados y los logros alcanzados.</p>
+            </div>
+            <div class="proyect">
+                <img src="/img/fondo4.jpg" alt="Captura de pantalla del proyecto 2">
+                <h3>Proyecto 2</h3>
+                <p>Descripción del proyecto 2. Destaca los aspectos más relevantes y el impacto del proyecto.</p>
+            </div>
+            <div class="proyect">
+                <img src="/img/fondo5.jpg" alt="Captura de pantalla del proyecto 3">
+                <h3>Proyecto 3</h3>
+                <p>Descripción del proyecto 3. Destaca los aspectos más relevantes y el impacto del proyecto.</p>
+            </div>
+            </div>
+    </section>
 
-
-
-
-
-
-
-<p>jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-    jdfskfjsdkjdf dskfjsdkfj sdkf sdkfjsdkf sdfj sdkfsdk fsdkjfsdkjfksdfj
-    dfjksadjfksdjfksdjfksdjfksdjfksdjfsdkjfsdkjfksdjfsdkjfksdjfkdsjfksdjf
-    dfksdjfksjdfkjsdfkjsdkfjsdkfjsdkjfsdkjfsdkjfsdkfjsa  sdf s fsd fsfd 
-    dkfsdkf sdfjskd fsd fsd fskd fsdk sdkf sdfkj sdkfjsdkfj asdf sad fasdkf 
-    dsfjsdakf sñdf sakdfj asdkf asdf askdf jsdkfjsdkfjskfjafwerfksepof dfsd
-    fsdf sdkf sdkf sdf sdkf sdakf sdkf sdakfasd fsdk fksad fksda fksd fsd afksd
-    fskdfksad fksdajf ksdaj fsadkj fsdk fskad fsdak fsd fsd fsdak fsdk fskd fsadk
-</p>
-
-
+    <footer id="piedepagina">
+        <p class="contac">Contacto</p>
+        <div class="container">
+            <p class="mimail">jle36@hotmail.com - Cel. +54-3487-616158</p>
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/jose-luis-espinola-a036b7125/" title="Ir a Linkedin">LinkedIn</a></li>
+                <li><a href="https://github.com/JoseLuisEspinola" title="Ir a GitHub">GitHub</a></li>
+                <li><a href="https://www.facebook.com/joseluis.espinola1" title="Ir a Facebook">Facebook</a></li>
+            </ul>
+        </div>
+        <p class="copying">&copy; 2024 Portafolio - Todos los derechos reservados - Espinola Jose Luis</p>
+    </footer>
 
 </body>
 </html>
