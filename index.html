@@ -24,7 +24,7 @@
             <li><a href="#">Inicio</a></li>
             <li><a href="#sobremi">Sobre Mi</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#">Formulario</a></li>
+            <li><a href="#section-form">Formulario</a></li>
             <li><a href="#piedepagina">Contacto</a></li>
         </ul>
     </nav>
@@ -87,6 +87,24 @@
             </div>
     </section>
 
+<!--------- FORMULARIO PARA SER PROXIMO ORADOR ------------>
+    <section id="section-form">
+        <h2 class="titulo-form">FORMULARIO DE CONTACTO</h2>
+        <!-- <form action="./php/enviar.php" method="post"> -->
+        <form action="https://formsubmit.co/jle36@hotmail.com" method="POST" target="_blank">		
+            <p class="anotate">Puedes hacernos llegar tu inquietud a traves de <abbr title="attribute">este</abbr> formulario!</p>
+            <input type="text" name="Nombre" placeholder="&#128102; Nombre" pattern="[a-zA-Z' ]*" required>
+            <input type="text" name="Apellido" placeholder="&#129489; Apellido" pattern="[a-zA-Z' ]*" required>
+            <!-- <input type="tel" name="Telefono" pattern="\d{3}-\d{4}-\d{4}" placeholder="Telefono" required> --->
+            <input type="tel" name="Telefono" placeholder="&#128383; Telefono" pattern="[a-zA-Z0-9' ]*" required>
+            <input type="email" name="Correo" placeholder="&#128231; Correo" minlength="8" required>
+            <textarea name="mensaje" placeholder="&#128209; Escriba aqui su mensaje" minlength="8" required></textarea>
+            
+            <input type="submit" id="boton" title="Clic para enviar el mail" value="&#128234; ENVIAR">
+        </form>
+    </section>
+
+     <!-- Seccion de footer -->
     <footer id="piedepagina">
         <p class="contac">Contacto</p>
         <div class="container">

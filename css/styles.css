@@ -205,6 +205,95 @@ section h2 {   /* todos los h2 */
     color: #555;
 }
 
+
+/* ********************************* */
+/* Texto de formulario */
+#section_form h2 {
+    text-align: center;
+    font-size:xx-large;
+    padding: 30px 3px 2px 3px;
+}
+
+/* Estilos para centrar el formulario en el medio del contenedor */
+#section-form {
+    max-width: 100%;
+    background-image: url(../img/NewSoft.png);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;   /* para que la imagen quede fija en el fondo */
+    padding-bottom: 16px;
+}
+
+form {
+    /*width: 760px;*/
+    max-width: 40%;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px 20px 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+section h2.titulo-form {
+    margin: 0;
+    padding-top: 16px;
+    color: white;
+}
+
+form p {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 8px;
+    box-sizing: border-box;  /* para que el largo de los campos no se salga fuera del marco*/
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+textarea {
+    min-height: 200px;
+    max-height: 200px;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+#boton {
+    text-align: center;  /* si el boton fuese type="button" quedaria en el centro, pero como es type="subnit" no queda en el centro */
+    background: #31384a;
+    color: #fff;
+    margin-bottom: 14px;
+    padding: 18px;
+}
+
+#boton:hover {
+    cursor: pointer;
+    color: #FF4081;
+    transition: 0.4s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ******* Footer ****** */
 footer {
     background-color: #333;
@@ -284,11 +373,13 @@ p.copying {
         /* height: 100vh; */
         height: 60vh;
         background: #2c3e50;
-        top: 80px;
+        top: 100px;
         left: -100%;
         text-align: center;
         transition: all .5s;
         overflow: scroll;
+        /* overflow-y: auto; */
+
     }
 
     nav ul li{
