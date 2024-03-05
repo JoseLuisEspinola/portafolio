@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Great Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kalam&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -34,13 +37,13 @@ nav.abajo {
 }
 
 .logo {
-    height: 40px;
-    border-radius: 2px;
+    height: 44px;
+    border-radius: 4px;
     margin-right: 20px;
     transition: 1s;
 }
 
-.nombre {
+.main-name {
     color: white;
     font-size: 18px;
     text-transform: uppercase;
@@ -86,7 +89,7 @@ li a:hover {
     display: none;
 }
 
-nav.abajo .nombre,
+nav.abajo .main-name,
 nav.abajo ul li a {
     color: yellow;
 }
@@ -101,6 +104,9 @@ img.logo:hover {
     rotate: 360deg;
 }
 
+.main-name:hover {
+    color:chocolate;
+}
 span.nombre:hover {
     font-size: 1.8rem;
     color: red;
@@ -140,10 +146,10 @@ span.nombre:hover {
 /* ******** Datos sobre mi ******** */
 #sobremi {
     background-color: #fecec1;
-    padding: 50px 0;
-/*     text-align: center; */
-  }
-  
+    padding: 50px 50px;
+    /*     text-align: center; */
+}
+
 .sobremi-content {
     display: flex;
     justify-content: center;
@@ -157,7 +163,22 @@ span.nombre:hover {
     border-radius: 50%;
     margin-bottom: 20px;
 }
-  
+
+p.historiamia {
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-size: 2.2rem;
+    color:rgba(46, 2, 95, 0.4);
+    padding-bottom: 15px;
+}
+
+
+p.actualidad {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    color:rgba(95, 78, 2, 0.4);
+}
+
 section h2 {   /* todos los h2 */
     font-size: 2em;
     margin-bottom: 20px;
@@ -238,6 +259,7 @@ section h2.titulo-form {
     margin: 0;
     padding-top: 16px;
     color: white;
+    text-shadow: #FF4081 2px 2px;
 }
 
 form p {
@@ -246,6 +268,15 @@ form p {
     margin: 0;
     font-size: 1.4rem;
     margin-bottom: 20px;
+}
+
+input.nombre,
+input.apellido {
+    text-transform: capitalize;
+}
+
+input.email {
+    text-transform: lowercase;
 }
 
 input, textarea {
