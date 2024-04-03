@@ -136,14 +136,27 @@ span.nombre:hover {
     font-size: 6rem;
     margin-bottom: 10px;
     text-shadow: 6px 4px #070707;
+
+    /* fotograma */
+    animation: slide-in 20s infinite;
+    animation-timing-function: linear;
 }
 
+@keyframes slide-in {
+    from {
+        transform: translateX(190%);
+    }
+    to {
+        transform: translateX(-200%);
+    }
+}
 
 .presentacion p {
-    color: white;
+    color: rgb(75, 2, 94);
     font-size: 40px;
     margin-bottom: 5px;
 }
+
 
 /* ******** Datos sobre mi ******** */
 #sobremi {
