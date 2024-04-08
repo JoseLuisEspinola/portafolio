@@ -225,29 +225,36 @@ section h2 {   /* todos los h2 */
 }
 
 /* *********** Proyecto ******** */
+.card {
+    width: 500px;
+    height: 400px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+    margin: 20px;
+}
+
 .card-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 100px;
-}
-
-.card {
-    width: 500px;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    margin: 20px;
+    /* margin: 100px; */
+    margin: 30px;
 }
 
 .card img {
     width: 100%;
-    height: auto;
+    /* height: auto; */
+    /* lo nuevo */
+    height: 50%;
 }
 
 .card-content {
     padding: 16px;
+    /* lo nuevo */
+    width: 100%;
+    height: 50%;
 }
 
 .card-content h3 {
@@ -257,7 +264,7 @@ section h2 {   /* todos los h2 */
 
 .card-content p {
     color: #666;
-    font-size: 15 px;
+    font-size: 15px;
     line-height: 1.3;
 }
 
@@ -401,7 +408,7 @@ p.mimail {
 
 p.copying {
     font-size: 1.1rem;
-    font-stretch:ultra-expanded;
+    font-stretch: ultra-expanded;
     color:rgb(119, 194, 109)
 }
 
@@ -440,7 +447,6 @@ p.copying {
         transition: all .5s;
         overflow: scroll;
         /* overflow-y: auto; */
-
     }
 
     nav ul li{
