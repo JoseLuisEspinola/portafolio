@@ -18,6 +18,7 @@ nav {
     padding: 16px 10px;
     height: 100px;
     width: 100%;
+    z-index: 99;
 }
 
 nav.abajo {
@@ -33,11 +34,24 @@ nav.abajo {
 }
 
 .logo {
-    height: 60px;
+    height: 70px;
+    width: 70px;
     border-radius: 4px;
     margin-right: 20px;
-    transition: 1s;
+    animation: rotar-logo 4s ease infinite;
 }
+
+@keyframes rotar-logo {
+    from {
+        transform: rotateY(360deg);
+    }
+}
+
+/* img.logo:hover {
+    transform: scale(1.4);
+    rotate: 360deg;
+}
+ */
 
 .main-name {
     color: white;
@@ -61,7 +75,7 @@ nav ul li {
 
 nav ul li a {
     position: relative;
-    color: #a0a0a0;
+    color: #21d5fa;
     font-size: 18px;
     /* padding: 7px 13px; */
     border-radius: 5px;
@@ -86,7 +100,6 @@ li a:after {
 li a:hover {
     /* background: rgb(156, 156, 157, 0.6); */
     /* transition: 0.5s; */
-
     color: #ffffff;
 }
 
@@ -104,7 +117,7 @@ li a:hover:after {
     display: none;
 }
 
-#check {
+input {
     display: none;
 }
 
@@ -113,22 +126,13 @@ nav.abajo ul li a {
     color: white;
 }
 
-nav.abajo .logo,
+/* nav.abajo .logo, */
 nav.abajo ul li a:hover {
-    color:yellow;
-}
-
-img.logo:hover {
-    transform: scale(1.4);
-    rotate: 360deg;
+    color: #21d5fa;
 }
 
 .main-name:hover {
-    color:chocolate;
-}
-span.nombre:hover {
-    font-size: 1.8rem;
-    color: red;
+    color: #9ec7e3;
 }
 
 /* **** Zona central de la primer pagina **** */ 
@@ -225,6 +229,14 @@ section h2 {   /* todos los h2 */
 }
 
 /* *********** Proyecto ******** */
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* margin: 100px; */
+    margin: 30px;
+}
+
 .card {
     width: 500px;
     height: 400px;
@@ -233,14 +245,6 @@ section h2 {   /* todos los h2 */
     overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
     margin: 20px;
-}
-
-.card-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    /* margin: 100px; */
-    margin: 30px;
 }
 
 .card img {
@@ -277,6 +281,11 @@ section h2 {   /* todos los h2 */
     margin-top: 16px;
     color: #ffffff;
 }
+
+.card-content .btn:hover {
+    color:#21d5fa;
+}
+
 
 /* ********************************* */
 /* Texto de formulario */
