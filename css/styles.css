@@ -18,7 +18,7 @@ nav {
     padding: 16px 10px;
     height: 100px;
     width: 100%;
-    z-index: 99;
+    z-index: 100;
 }
 
 nav.abajo {
@@ -34,24 +34,11 @@ nav.abajo {
 }
 
 .logo {
-    height: 70px;
-    width: 70px;
+    height: 60px;
     border-radius: 4px;
     margin-right: 20px;
-    animation: rotar-logo 4s ease infinite;
+    transition: 1s;
 }
-
-@keyframes rotar-logo {
-    from {
-        transform: rotateY(360deg);
-    }
-}
-
-/* img.logo:hover {
-    transform: scale(1.4);
-    rotate: 360deg;
-}
- */
 
 .main-name {
     color: white;
@@ -100,6 +87,7 @@ li a:after {
 li a:hover {
     /* background: rgb(156, 156, 157, 0.6); */
     /* transition: 0.5s; */
+
     color: #ffffff;
 }
 
@@ -117,7 +105,7 @@ li a:hover:after {
     display: none;
 }
 
-input {
+#check {
     display: none;
 }
 
@@ -126,13 +114,23 @@ nav.abajo ul li a {
     color: white;
 }
 
-/* nav.abajo .logo, */
+nav.abajo .logo,
 nav.abajo ul li a:hover {
     color: #21d5fa;
 }
 
+img.logo:hover {
+    transform: scale(1.4);
+    rotate: 360deg;
+}
+
 .main-name:hover {
-    color: #9ec7e3;
+    color:chocolate;
+}
+
+span.nombre:hover {
+    font-size: 1.8rem;
+    color: red;
 }
 
 /* **** Zona central de la primer pagina **** */ 
@@ -188,7 +186,7 @@ nav.abajo ul li a:hover {
 /* ******** Datos sobre mi ******** */
 #sobremi {
     background-color: #fecec1;
-    padding: 50px 50px;
+    padding: 100px 50px;
     /*     text-align: center; */
 }
 
@@ -214,7 +212,6 @@ p.historiamia {
     padding-bottom: 15px;
 }
 
-
 p.actualidad {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2rem;
@@ -228,7 +225,63 @@ section h2 {   /* todos los h2 */
     color: blue;
 }
 
-/* *********** Proyecto ******** */
+/***************************/
+/* ****** Lenguajes ****** */
+#container-slider {
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f3ded8;
+}
+
+#container-slider h2 {
+    padding-top: 100px;
+}
+
+.slider {
+    width: 75vw;
+    height: 75vh;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slider .slide-track {
+    display: flex;
+    gap: 10px;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 50s linear infinite;
+    width: calc(200px * 22);  /* es la cantidad de imagenes que pusimos */
+}
+
+.slider .slide {
+    width: 200px;
+    height: 200px;
+}
+
+.slider .slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 11));
+        transform: translateX(calc(-200px * 11));
+    }
+}
+
+/**********************************************/
+/* *********** Card de los proyectos ******** */
+#container-proyectos h2 {
+    padding-top: 100px;
+}
+
 .card-container {
     display: flex;
     justify-content: center;
@@ -239,7 +292,7 @@ section h2 {   /* todos los h2 */
 
 .card {
     width: 500px;
-    height: 400px;
+    height: 500px;
     background-color: #f0f0f0;
     border-radius: 8px;
     overflow: hidden;
@@ -251,7 +304,7 @@ section h2 {   /* todos los h2 */
     width: 100%;
     /* height: auto; */
     /* lo nuevo */
-    height: 50%;
+    height: 60%;
 }
 
 .card-content {
@@ -282,26 +335,24 @@ section h2 {   /* todos los h2 */
     color: #ffffff;
 }
 
-.card-content .btn:hover {
-    color:#21d5fa;
-}
-
-
 /* ********************************* */
 /* Texto de formulario */
-#section_form h2 {
-    text-align: center;
-    font-size:xx-large;
-    padding: 30px 3px 2px 3px;
-}
-
 /* Estilos para centrar el formulario en el medio del contenedor */
 #section-form {
     max-width: 100%;
-    background-image: url(../img/fondoformpc.jpg);
+    background-image: url(../img/fondoform2.jpg);
     background-size: 100vw 100vh;
     background-attachment: fixed;   /* para que la imagen quede fija en el fondo */
     padding-bottom: 16px;
+}
+
+.titulo-form {
+    text-align: center;
+    font-size:xx-large;
+    padding: 100px 3px 2px 3px;
+    margin: 0;
+    color: white;
+    text-shadow: #FF4081 2px 2px;
 }
 
 form {
@@ -313,13 +364,6 @@ form {
     box-sizing: border-box;
     margin-top: 20px;
     border-radius: 5px;
-}
-
-section h2.titulo-form {
-    margin: 0;
-    padding-top: 16px;
-    color: white;
-    text-shadow: #FF4081 2px 2px;
 }
 
 form p {
@@ -350,8 +394,8 @@ input, textarea {
 }
 
 textarea {
-    min-height: 200px;
-    max-height: 200px;
+    min-height: 140px;
+    max-height: 140px;
     min-width: 100%;
     max-width: 100%;
 }
@@ -361,12 +405,12 @@ textarea {
     background: #31384a;
     color: #fff;
     margin-bottom: 14px;
-    padding: 18px;
+    padding: 10px;
 }
 
 #boton:hover {
     cursor: pointer;
-    color: #FF4081;
+    color: #ff4081;
     transition: 0.4s;
 }
 
