@@ -137,6 +137,7 @@ span.nombre:hover {
 #zona1{
     /* margin-top: 100px; */  /* la imagen enpesara luego del alto del navbar que tiene tambien 100px */
     background: url(../img/fondo19.jpg) no-repeat;   /* Es para que sea SOLO una imagen */
+    /* background: url(/img/portada.png) no-repeat; */
     background-size: cover;
     background-position: center center;
     height: calc(100vh - 100px);
@@ -232,7 +233,10 @@ section h2 {   /* todos los h2 */
     height: 400px;
     display: flex;
     flex-direction: column;
-    background-color: #f3ded8;
+    /* background-color: #f3ded8; */
+    background-image: url(/img/fondoform2.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 #container-slider h2 {
@@ -340,7 +344,7 @@ section h2 {   /* todos los h2 */
 /* Estilos para centrar el formulario en el medio del contenedor */
 #section-form {
     max-width: 100%;
-    background-image: url(../img/fondoform2.jpg);
+    background-image: url(/img/fondoform.png);
     background-size: 100vw 100vh;
     background-attachment: fixed;   /* para que la imagen quede fija en el fondo */
     padding-bottom: 16px;
@@ -359,10 +363,11 @@ form {
     /*width: 760px;*/
     max-width: 40%;
     margin: auto;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.3);
     padding: 20px 20px 10px 20px;
     box-sizing: border-box;
     margin-top: 20px;
+    margin-bottom: 30px;
     border-radius: 5px;
 }
 
@@ -389,8 +394,12 @@ input, textarea {
     padding: 8px;
     box-sizing: border-box;  /* para que el largo de los campos no se salga fuera del marco*/
     font-size: 18px;
-    border: none;
     border-radius: 5px;
+    /* border: none; */
+
+    border: 1px solid rgb(168, 168, 168);
+    color: #ffffff;
+    background-color: transparent;
 }
 
 textarea {
