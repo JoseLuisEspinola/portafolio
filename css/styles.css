@@ -187,7 +187,7 @@ span.nombre:hover {
 /* ******** Datos sobre mi ******** */
 #sobremi {
     background-color: #fecec1;
-    padding: 100px 50px;
+    padding: 120px 50px;
     /*     text-align: center; */
 }
 
@@ -223,6 +223,7 @@ section h2 {   /* todos los h2 */
     font-size: 2em;
     margin-bottom: 20px;
     text-align: center;
+    text-transform: uppercase;
     color: blue;
 }
 
@@ -230,7 +231,7 @@ section h2 {   /* todos los h2 */
 /* ****** Lenguajes ****** */
 #container-slider {
     width: 100vw;
-    height: 400px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     /* background-color: #f3ded8; */
@@ -240,7 +241,8 @@ section h2 {   /* todos los h2 */
 }
 
 #container-slider h2 {
-    padding-top: 100px;
+    padding-top: 120px;
+    color: #ffffff;
 }
 
 .slider {
@@ -283,7 +285,7 @@ section h2 {   /* todos los h2 */
 /**********************************************/
 /* *********** Card de los proyectos ******** */
 #container-proyectos h2 {
-    padding-top: 100px;
+    padding-top: 120px;
 }
 
 .card-container {
@@ -300,7 +302,7 @@ section h2 {   /* todos los h2 */
     background-color: #f0f0f0;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.6);
     margin: 20px;
 }
 
@@ -352,8 +354,8 @@ section h2 {   /* todos los h2 */
 
 .titulo-form {
     text-align: center;
-    font-size:xx-large;
-    padding: 100px 3px 2px 3px;
+    font-size: 2em;
+    padding: 160px 3px 2px 3px;
     margin: 0;
     color: white;
     text-shadow: #FF4081 2px 2px;
@@ -367,7 +369,7 @@ form {
     padding: 20px 20px 10px 20px;
     box-sizing: border-box;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 200px;
     border-radius: 5px;
 }
 
@@ -411,15 +413,17 @@ textarea {
 
 #boton {
     text-align: center;  /* si el boton fuese type="button" quedaria en el centro, pero como es type="subnit" no queda en el centro */
-    background: #31384a;
     color: #fff;
+    background: transparent;
+    border: 0.1px solid #15a4fa;
     margin-bottom: 14px;
     padding: 10px;
 }
 
 #boton:hover {
     cursor: pointer;
-    color: #ff4081;
+    color: #ffffff;
+    background-color: #15A4FA;
     transition: 0.4s;
 }
 
@@ -429,7 +433,7 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 40px 0;
 }
 
 p.contac {
@@ -477,8 +481,8 @@ p.copying {
 
 /* **** Meedia Query **** */
 /* medias query */
-@media (max-width: 952px){
-    .enlace{
+@media (max-width: 952px) {
+    .enlace {
         padding-left: 16px;
         order: 1;
     }
@@ -487,46 +491,64 @@ p.copying {
         font-size: 18px;
     }
     
-    nav ul li a{
+    nav ul li a {
         font-size: 16px;
+    }
+
+    form {
+        max-width: 50%;
     }
 }
 
-@media (max-width: 858px){
-    .checkbtn{
+@media (max-width: 858px) {
+    .checkbtn {
         display: block;
     }
 
-    ul{
+    ul {
         position: fixed;
         width: 100%;
         /* height: 100vh; */
         height: 60vh;
-        background: #2c3e50;
+        background: rgba(44, 62, 80, 0.9);
         top: 100px;
         left: -100%;
         text-align: center;
         transition: all .5s;
-        overflow: scroll;
+        overflow-y: auto;
         /* overflow-y: auto; */
     }
 
-    nav ul li{
+    nav ul li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
 
-    nav ul li a{
+    nav ul li a {
         font-size: 20px;
     }
 
-    li a:hover, li a.active{
+    li a:hover, li a.active {
         background: none;
         color: red;
     }
 
-    #check:checked ~ ul{
+    #check:checked ~ ul {
         left:0;
+    }
+
+    form {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 490px) {
+    section h2,
+    .titulo-form {
+        font-size: 1.5em;
+    }
+    form {
+        max-width: 80%;
     }
 }
