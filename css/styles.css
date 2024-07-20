@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
 
+:root {
+    --primary-100: #721b67;
+    --primary-200: #9b258c;
+    --primary-300: #c42fb2;
+    --accent-100: #3f81b1;
+    --accent-200: #3f81b1;
+    --accent-300: #3f81b1;
+    --background-100: #fcfafc;
+    --background-200: #f2eaf2;
+    --background-300: #e9dae9;
+    --text-100: #0d030c;
+    --text-200: #360d32;
+    --text-300: #601659;
+  }
+
+
 * {
     padding: 0;
     margin: 0;
@@ -137,7 +153,6 @@ span.nombre:hover {
 #zona1{
     /* margin-top: 100px; */  /* la imagen enpesara luego del alto del navbar que tiene tambien 100px */
     background: url(../img/fondo19.jpg) no-repeat;   /* Es para que sea SOLO una imagen */
-    /* background: url(/img/portada.png) no-repeat; */
     background-size: cover;
     background-position: center center;
     height: calc(100vh - 100px);
@@ -284,6 +299,10 @@ section h2 {   /* todos los h2 */
 
 /**********************************************/
 /* *********** Card de los proyectos ******** */
+#container-proyectos {
+    background-color: #e9dae9;
+}
+
 #container-proyectos h2 {
     padding-top: 120px;
 }
@@ -293,7 +312,7 @@ section h2 {   /* todos los h2 */
     justify-content: center;
     flex-wrap: wrap;
     /* margin: 100px; */
-    margin: 30px;
+    padding: 40px;
 }
 
 .card {
@@ -394,11 +413,12 @@ input, textarea {
     width: 100%;
     margin-bottom: 20px;
     padding: 8px;
-    box-sizing: border-box;  /* para que el largo de los campos no se salga fuera del marco*/
-    font-size: 18px;
-    border-radius: 5px;
-    /* border: none; */
+    box-sizing: border-box;
 
+    font-size: 18px;
+    font-family: sans-serif, 'Courier New', Courier, monospace;
+    
+    border-radius: 5px;
     border: 1px solid rgb(168, 168, 168);
     color: #ffffff;
     background-color: transparent;
@@ -409,6 +429,10 @@ textarea {
     max-height: 140px;
     min-width: 100%;
     max-width: 100%;
+}
+
+::placeholder {
+    color: #bea7bc;
 }
 
 #boton {
