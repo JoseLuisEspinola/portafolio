@@ -554,6 +554,7 @@ p.copying {
     }
 }
 
+
 @media (max-width: 858px) {
     .checkbtn {
         display: block;
@@ -620,6 +621,7 @@ p.copying {
     }
 }
 
+
 @media (max-width: 490px) {
     .presentacion h1 {
         font-size: 3rem;
@@ -666,4 +668,40 @@ p.copying {
     form {
         max-width: 86%;
     }
+
+    /* ************************** */
+    footer {
+        padding: 30px 0;
+    }
+    
+    p.contac {
+        font-size: 1.6rem;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: #333;
+        padding-bottom: 10px;
+        text-shadow: #2fcdcd 2px 2px;
+    }
+    
+    p.mimail {
+        font-size: 1rem;
+    }
+    
+    .social-links a {
+        font-size: 1.1rem;
+        color: #ffffff;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+      
+    p.copying {
+        font-size: 0.9rem;
+        font-stretch: expanded;
+        color:rgb(119, 194, 109)
+    }
+
+
+
+
+
+
 }
