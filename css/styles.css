@@ -26,14 +26,14 @@
 
 nav {
     position: fixed;
-    /* background: #261833;  no me hace falta el color de fondo del navbar  */
     top: 0;
     left: 0;
     justify-content: space-arround;
     transition: 0.7s;
     padding: 16px 10px;
     height: 100px;
-    width: 100%;
+    /* width: 100%; */
+    width: 100vw;
     z-index: 100;
 }
 
@@ -80,11 +80,8 @@ nav ul li a {
     position: relative;
     color: #21d5fa;
     font-size: 18px;
-    /* padding: 7px 13px; */
     border-radius: 5px;
     text-transform: uppercase;
-
-    /* letter-spacing: 0.5px */;
     padding: 0 12px;
 }
 
@@ -101,8 +98,6 @@ li a:after {
 }
 
 li a:hover {
-    /* background: rgb(156, 156, 157, 0.6); */
-    /* transition: 0.5s; */
     color: #ffffff;
 }
 
@@ -148,9 +143,9 @@ span.nombre:hover {
     color: red;
 }
 
+/**********************************************/
 /* **** Zona central de la primer pagina **** */ 
 #zona1{
-    /* margin-top: 100px; */  /* la imagen enpesara luego del alto del navbar que tiene tambien 100px */
     background: url(../img/fondo19.jpg) no-repeat;   /* Es para que sea SOLO una imagen */
     background-size: cover;
     background-position: center center;
@@ -171,7 +166,7 @@ span.nombre:hover {
   
 .presentacion h1 {
     color: #FF4081;
-    font-size: 6rem;
+    font-size: 5.8rem;
     margin-bottom: 10px;
     text-shadow: 6px 4px #070707;
 
@@ -183,15 +178,14 @@ span.nombre:hover {
 /* **** Fotograma de LA INFORMATICA, presentacion h1 **** */
 @keyframes slide-in {
     from {
-        transform: translateX(190%);
+        transform: translateX(180%);
     }
     to {
-        transform: translateX(-200%);
+        transform: translateX(-180%);
     }
 }
 
 .presentacion p {
-    /* font-family: 'Montserrat', sans-serif; */
     color: white;
     font-weight: 600;
     font-size: 46px;
@@ -248,7 +242,6 @@ section h2 {   /* todos los h2 */
     height: 600px;
     display: flex;
     flex-direction: column;
-    /* background-color: #f3ded8; */
     background-image: url(/img/fondoform2.jpg);
     background-position: center;
     background-size: cover;
@@ -391,7 +384,7 @@ section h2 {   /* todos los h2 */
     min-width: 100px;   /* podria poner auto, si se requiere */
 }
 
-/* ********************************* */
+/* ************************************************************* */
 /* Texto de formulario */
 /* Estilos para centrar el formulario en el medio del contenedor */
 #section-form {
@@ -446,6 +439,7 @@ input, textarea {
     box-sizing: border-box;
 
     font-size: 16px;
+    /* el font-family, es mas que nada para el textarea */
     font-family: sans-serif, 'Courier New', Courier, monospace;
     
     border-radius: 5px;
@@ -571,7 +565,6 @@ p.copying {
         text-align: center;
         transition: all .5s;
         overflow-y: auto;
-        /* overflow-y: auto; */
     }
 
     nav ul li {
@@ -595,7 +588,7 @@ p.copying {
 
     .presentacion h1 {
         font-size: 4rem;
-        /* fotograma */
+        
         animation: slide-in 20s infinite;
         animation-timing-function: linear;
     }
@@ -603,10 +596,10 @@ p.copying {
     /* **** Fotograma de LA INFORMATICA, presentacion h1 **** */
     @keyframes slide-in {
         from {
-            transform: translateX(150%);
+            transform: translateX(140%);
         }
         to {
-            transform: translateX(-120%);
+            transform: translateX(-140%);
         }
     }
     
@@ -633,10 +626,10 @@ p.copying {
     /* **** Fotograma de LA INFORMATICA, presentacion h1 **** */
     @keyframes slide-in {
         from {
-            transform: translateX(140%);
+            transform: translateX(120%);
         }
         to {
-            transform: translateX(-110%);
+            transform: translateX(-120%);
         }
     }
     
@@ -696,6 +689,7 @@ p.copying {
     p.copying {
         font-size: 0.9rem;
         font-stretch: expanded;
+        font-stretch:semi-expanded;
         color:rgb(119, 194, 109)
     }
 
