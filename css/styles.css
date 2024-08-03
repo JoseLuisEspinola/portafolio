@@ -318,7 +318,7 @@ section h2 {   /* todos los h2 */
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.6);
     background-color: #f0f0f0;
     width: 100%;
-    height: 500px;
+    height: 600px;
     object-fit: cover;
     overflow: hidden;
 }
@@ -692,10 +692,4 @@ p.copying {
         font-stretch:semi-expanded;
         color:rgb(119, 194, 109)
     }
-
-
-
-
-
-
 }
