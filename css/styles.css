@@ -350,7 +350,7 @@ section h2 {   /* todos los h2 */
     grid-row: 3 / 4; /* Descripción ocupa la tercera fila */
     margin: 0 16px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     overflow-y: scroll; /* Hacer que el contenido desbordado sea desplazable verticalmente */
     max-height: 100%; /* Asegurar que no crezca más allá del contenedor */
 }
@@ -358,7 +358,8 @@ section h2 {   /* todos los h2 */
 .card-description p {
     color: #666;
     font-size: 19px;
-    line-height: 1.2;
+    padding: 10px 0;
+    line-height: 1.1;
 }
 
 .card-btns {
