@@ -119,13 +119,10 @@ img.logo:hover {
 }
 
 .main-name:hover {
-    color:chocolate;
+    color: #21d5fa;
+    text-shadow: 2px 2px #ffffff;
 }
 
-span.nombre:hover {
-    font-size: 1.8rem;
-    color: red;
-}
 
 /**********************************************/
 /* **** Zona central de la primer pagina **** */ 
@@ -157,17 +154,17 @@ span.nombre:hover {
     text-shadow: 6px 4px #070707;
 
     /* fotograma */
-    animation: slide-in 20s infinite;
+    animation: slide-in 18s infinite;
     animation-timing-function: linear;
 }
 
 /* **** Fotograma de LA INFORMATICA, presentacion h1 **** */
 @keyframes slide-in {
     from {
-        transform: translateX(150%);
+        transform: translateX(250%);
     }
     to {
-        transform: translateX(-150%);
+        transform: translateX(-250%);
     }
 }
 

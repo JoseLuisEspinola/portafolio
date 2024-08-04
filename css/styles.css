@@ -6,8 +6,6 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;  /* para que los elementos no salgan del contenedor */
-
-    overflow-x: hidden;
 }
 
 nav {
@@ -121,13 +119,10 @@ img.logo:hover {
 }
 
 .main-name:hover {
-    color:chocolate;
+    color: #21d5fa;
+    text-shadow: 2px 2px #ffffff;
 }
 
-span.nombre:hover {
-    font-size: 1.8rem;
-    color: red;
-}
 
 /**********************************************/
 /* **** Zona central de la primer pagina **** */ 
@@ -155,7 +150,7 @@ span.nombre:hover {
 .presentacion h1 {
     color: #FF4081;
     font-size: 5.8rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-shadow: 6px 4px #070707;
 
     /* fotograma */
@@ -169,7 +164,7 @@ span.nombre:hover {
         transform: translateX(180%);
     }
     to {
-        transform: translateX(-180%);
+        transform: translateX(-220%);
     }
 }
 
