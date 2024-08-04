@@ -6,6 +6,8 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;  /* para que los elementos no salgan del contenedor */
+
+    overflow-x: hidden;
 }
 
 nav {
@@ -94,7 +96,7 @@ li a:hover:after {
     color: white;
     float: right;
     line-height: 80px;
-    margin-right: 20px;
+    margin-right: 30px;
     cursor: pointer;
     display: none;
 }
@@ -141,6 +143,8 @@ span.nombre:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    overflow-x: hidden;
 }
 
 .presentacion {
@@ -591,7 +595,7 @@ p.copying {
     .presentacion p {
         color: white;
         font-weight: 400;
-        font-size: 38px;
+        font-size: 1.4em;
     }
 
     form {
