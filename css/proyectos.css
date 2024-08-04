@@ -161,10 +161,10 @@ img.logo:hover {
 /* **** Fotograma de LA INFORMATICA, presentacion h1 **** */
 @keyframes slide-in {
     from {
-        transform: translateX(250%);
+        transform: translateX(180%);
     }
     to {
-        transform: translateX(-250%);
+        transform: translateX(-220%);
     }
 }
 
