@@ -296,7 +296,7 @@ section h2 {   /* todos los h2 */
 
 .card {
     display: grid;
-    grid-template-rows: 60% 7% 23% 10%;
+    grid-template-rows: 55% 10% 25% 10%;
     border-radius: 8px;
     box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.6);
     background-color: #f0f0f0;
