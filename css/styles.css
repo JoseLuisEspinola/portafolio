@@ -296,7 +296,7 @@ section h2 {   /* todos los h2 */
 
 .card {
     display: grid;
-    grid-template-rows: 50% 10% 30% 10%;
+    grid-template-rows: 60% 7% 23% 10%;
     border-radius: 8px;
     box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.6);
     background-color: #f0f0f0;
@@ -304,12 +304,16 @@ section h2 {   /* todos los h2 */
     height: 600px;
     object-fit: cover;
     overflow: hidden;
-
-    transition: 0.4s;
 }
 
 .card-img {
     grid-row: 1 / 2; /* Imagen ocupa la primera fila */
+    transition: 0.4s;
+}
+
+.card-img:hover {
+    scale: 1.03;
+    transition: 0.4s;
 }
 
 .card-img img {
@@ -349,7 +353,7 @@ section h2 {   /* todos los h2 */
 
 .card-btns {
     grid-row: 4 / 5; /* Botones ocupan la cuarta fila */
-    padding: 16px;
+    padding: 10px 16px 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -482,8 +486,13 @@ p.contac {
     text-shadow: #2fcdcd 2px 2px;
 }
 
-p.mimail {
+
+.mimail {
     font-size: 1.2rem;
+}
+
+.mimail a {
+    color: #ffffff;
 }
 
 .social-links {
@@ -513,7 +522,8 @@ p.mimail {
 p.copying {
     font-size: 1.1rem;
     font-stretch: ultra-expanded;
-    color:rgb(119, 194, 109)
+    /* color:#c7a17a; */
+    color: #fcb4a0;
 }
 
 
