@@ -247,7 +247,7 @@ section h2 {   /* todos los h2 */
     gap: 10px;
     animation: scroll 40s linear infinite;
     -webkit-animation: scroll 50s linear infinite;
-    width: calc(200px * 22);  /* es la cantidad de imagenes que pusimos */
+    width: calc(200px * 26);  /* es la cantidad TOTAL de imagenes que pusimos */
 }
 
 .slider .slide {
@@ -268,7 +268,7 @@ section h2 {   /* todos los h2 */
     }
     100% {
         -webkit-transform: translateX(calc(-200px * 11));
-        transform: translateX(calc(-200px * 11));
+        transform: translateX(calc(-200px * 13));  /* Cantidad que NO se repiten */
     }
 }
 
@@ -296,7 +296,7 @@ section h2 {   /* todos los h2 */
 
 .card {
     display: grid;
-    grid-template-rows: 55% 10% 25% 10%;
+    grid-template-rows: 50% 10% 30% 10%;
     border-radius: 8px;
     box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.6);
     background-color: #f0f0f0;
@@ -353,7 +353,7 @@ section h2 {   /* todos los h2 */
 
 .card-btns {
     grid-row: 4 / 5; /* Botones ocupan la cuarta fila */
-    padding: 10px 16px 10px;
+    padding: 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -465,7 +465,7 @@ textarea {
 #boton:hover {
     cursor: pointer;
     color: #ffffff;
-    background-color: #15A4FA;
+    background-color: #15a4fa;
     transition: 0.4s;
 }
 
