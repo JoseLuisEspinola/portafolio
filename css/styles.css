@@ -500,7 +500,6 @@ p.contac {
     text-shadow: #2fcdcd 2px 2px;
 }
 
-
 .mimail {
     font-size: 1.2rem;
 }
@@ -536,7 +535,6 @@ p.contac {
 p.copying {
     font-size: 1.1rem;
     font-stretch: ultra-expanded;
-    /* color:#c7a17a; */
     color: #fcb4a0;
 }
 
@@ -704,6 +702,5 @@ p.copying {
         font-size: 0.9rem;
         font-stretch: expanded;
         font-stretch:semi-expanded;
-        color:rgb(119, 194, 109)
     }
 }

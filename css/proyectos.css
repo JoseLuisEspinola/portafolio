@@ -459,8 +459,12 @@ p.contac {
     text-shadow: #2fcdcd 2px 2px;
 }
 
-p.mimail {
+.mimail {
     font-size: 1.2rem;
+}
+
+.mimail a {
+    color: #ffffff;
 }
 
 .social-links {
@@ -490,7 +494,7 @@ p.mimail {
 p.copying {
     font-size: 1.1rem;
     font-stretch: ultra-expanded;
-    color:rgb(119, 194, 109)
+    color: #fcb4a0;
 }
 
 
@@ -629,6 +633,5 @@ p.copying {
         font-size: 0.9rem;
         font-stretch: expanded;
         font-stretch:semi-expanded;
-        color:rgb(119, 194, 109)
     }
 }
