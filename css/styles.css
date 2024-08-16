@@ -502,13 +502,15 @@ p.contac {
 
 .mimail {
     font-size: 1.2rem;
+    padding-bottom: 12px;
 }
 
-.mimail a {
+ .mimail a {
     color: #ffffff;
 }
 
-.social-links {
+
+/* .social-links {
     list-style: none;
     padding: 0;
     display: flex;
@@ -530,6 +532,14 @@ p.contac {
 .social-links a:hover {
     color: #2fcdcd;
     background-color: #333;
+} */
+
+.sociales {
+    padding-bottom: 10px;
+}
+
+.sociales a {
+    padding: 0 4px;
 }
 
 p.copying {
