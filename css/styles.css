@@ -509,37 +509,17 @@ p.contac {
     color: #ffffff;
 }
 
-
-/* .social-links {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-  
-.social-links li {
-    color: #ffffff;
-    padding: 8px 10px;
-}
-
-.social-links a {
-    font-size: 1.4rem;
-    color: #ffffff;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-  
-.social-links a:hover {
-    color: #2fcdcd;
-    background-color: #333;
-} */
-
 .sociales {
     padding-bottom: 10px;
 }
 
 .sociales a {
     padding: 0 4px;
+}
+
+.linkedin, .github, .facebook, .whatsapp {
+    width: 36px;
+    height: 36px;
 }
 
 p.copying {
