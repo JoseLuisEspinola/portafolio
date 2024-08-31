@@ -186,7 +186,6 @@ nav.abajo .main-name:hover {
 #sobremi {
     background-color: #fecec1;
     padding: 120px 50px;
-    /*     text-align: center; */
 }
 
 .sobremi-content {
@@ -194,7 +193,7 @@ nav.abajo .main-name:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 70%;
+    max-width: 70%;
     margin: 0 auto;
 }
   
@@ -209,18 +208,16 @@ p.historiamia {
     font-family: "Chewy", system-ui;
     font-weight: 400;
     font-style: normal;
-    
-    
-    /* font-family: "Kalam", cursive;
-    font-weight: 400; */
-    font-size: 2.2rem;
+    /* font-size: 2.2rem; */
+    font-size: clamp(1.5rem, 2vw + 1rem, 2.188rem);
     color:rgba(46, 2, 95, 0.4);
     padding-bottom: 15px;
 }
 
 p.actualidad {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    font-size: clamp(1.313rem, 2vw + 0.75rem, 2.063rem);
     color:rgba(95, 78, 2, 0.4);
 }
 
@@ -522,15 +519,15 @@ p.contac {
     height: 36px;
 }
 
-p.copying {
+footer .copyright {
     font-size: 1.1rem;
     font-stretch: ultra-expanded;
     color: #fcb4a0;
 }
 
 
-/* **** Meedia Query **** */
-/* medias query */
+/*************************************/
+/* ***** Media Query con 952px ***** */
 @media (max-width: 952px) {
     .enlace {
         padding-left: 16px;
@@ -551,6 +548,9 @@ p.copying {
 }
 
 
+
+/*************************************/
+/* ***** Media Query con 858px ***** */
 @media (max-width: 858px) {
     .checkbtn {
         display: block;
@@ -617,6 +617,18 @@ p.copying {
 }
 
 
+
+/*************************************/
+/* ***** Media Query con 560px ***** */
+@media (max-width: 560px) {
+    .sobremi-content {
+        max-width: 96%;
+    }
+}
+
+
+/*************************************/
+/* ***** Media Query con 490px ***** */
 @media (max-width: 490px) {
     .presentacion h1 {
         font-size: 3rem;
@@ -641,13 +653,13 @@ p.copying {
         font-size: 30px;
     }
 
-    p.historiamia {
+/*     p.historiamia {
         font-size: 1.8rem;
     }
     
     p.actualidad {
         font-size: 1.7rem;
-    }
+    } */
 
     .card-description p {
         color: #666;
@@ -688,9 +700,8 @@ p.copying {
         transition: color 0.3s;
     }
       
-    p.copying {
-        font-size: 0.9rem;
-        font-stretch: expanded;
-        font-stretch:semi-expanded;
+    footer .copyright {
+        font-size: 0.74rem;
+        font-stretch: normal;
     }
 }

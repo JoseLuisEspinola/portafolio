@@ -134,7 +134,7 @@ nav.abajo .main-name:hover {
 /**********************************************/
 /* **** Zona central de la primer pagina **** */ 
 #zona1{
-    background: url(../img/fondo11.jpg) no-repeat;   /* Es para que sea SOLO una imagen */
+    background: url(../img/3.jpg) no-repeat;   /* Es para que sea SOLO una imagen */
     background-size: cover;
     background-position: center center;
     height: calc(100vh - 100px);
@@ -195,6 +195,17 @@ nav.abajo .main-name:hover {
     color: #f177cd;
 }
 
+.flecha-arriba{
+    bottom: 4px;
+    right: 4px;
+
+    position: fixed;
+
+    height: 40px; 
+    width: 40px;
+    cursor: pointer;
+}
+
 
 /**********************************************/
 /* *********** Seccion CONFERENCIA ********** */
@@ -202,8 +213,7 @@ nav.abajo .main-name:hover {
 .contenedor h2 {
     display: flex;
     justify-content: center;
-    padding-bottom: 30px;
-    /* font-size: 2em; */
+    margin: 0 auto 30px;
     font-size: clamp(20px, 1vw + 1rem, 32px);
 }
 
@@ -215,7 +225,7 @@ nav.abajo .main-name:hover {
 }
 
 .card-container1 {
-    width: 90%;
+    width: 86%;
     margin: 0 auto;
 
     display: grid;
@@ -238,7 +248,7 @@ nav.abajo .main-name:hover {
 }
 
 .card1:hover {
-    scale: 1.1;
+    scale: 1.06;
 }
 
 .card1 img {
@@ -479,15 +489,15 @@ p.contac {
     height: 36px;
 }
 
-p.copying {
+footer .copyright {
     font-size: 1.1rem;
     font-stretch: ultra-expanded;
     color: #fcb4a0;
 }
 
 
-/* **** Meedia Query **** */
-/* medias query */
+/*************************************/
+/* ***** Media Query con 952px ***** */
 @media (max-width: 952px) {
     .enlace {
         padding-left: 16px;
@@ -504,6 +514,8 @@ p.copying {
 }
 
 
+/*************************************/
+/* ***** Media Query con 858px ***** */
 @media (max-width: 858px) {
     .checkbtn {
         display: block;
@@ -568,7 +580,8 @@ p.copying {
     }
 }
 
-
+/*************************************/
+/* ***** Media Query con 490px ***** */
 @media (max-width: 490px) {
     .presentacion h1 {
         font-size: 3rem;
@@ -617,9 +630,8 @@ p.copying {
         transition: color 0.3s;
     }
       
-    p.copying {
-        font-size: 0.9rem;
-        font-stretch: expanded;
-        font-stretch:semi-expanded;
+    footer .copyright {
+        font-size: 0.74rem;
+        font-stretch: normal;
     }
 }
