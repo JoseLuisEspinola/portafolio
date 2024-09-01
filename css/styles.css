@@ -267,6 +267,7 @@ section h2 {   /* todos los h2 */
 }
 
 .slider .slide img {
+    color: #fff;   /* si la imagen no se carga, entonces de vera el alt= BLANCO */
     width: 100%;
     height: 100%;
     border-radius: 20px;
@@ -278,7 +279,7 @@ section h2 {   /* todos los h2 */
         transform: translateX(0);
     }
     100% {
-        -webkit-transform: translateX(calc(-200px * 11));
+        -webkit-transform: translateX(calc(-200px * 13));
         transform: translateX(calc(-200px * 13));  /* Cantidad que NO se repiten */
     }
 }
@@ -387,6 +388,7 @@ section h2 {   /* todos los h2 */
 
 .card-btns .btn:hover {
     color: #15a4fa;
+    /* background-color: #474646; */
 }
 
 /* ************************************************************* */
@@ -464,20 +466,38 @@ textarea {
     color: #bea7bc;
 }
 
+.aceptar {
+    display: flex;
+    flex-direction: row;
+}
+
+#check-priv {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.text-priv {
+    color: #fff;
+    font-size: clamp(0.938rem, 3vw, 1.125rem);
+}
+
 #boton {
+    cursor: pointer;
+    font-size: clamp(1rem, 2vw + 0.25rem, 1.125rem);
     text-align: center;  /* si el boton fuese type="button" quedaria en el centro, pero como es type="subnit" no queda en el centro */
     color: #fff;
     background: transparent;
     border: 0.1px solid #15a4fa;
     margin-bottom: 14px;
     padding: 10px;
+
+    transition: 0.4s;
 }
 
 #boton:hover {
-    cursor: pointer;
     color: #ffffff;
     background-color: #15a4fa;
-    transition: 0.4s;
 }
 
 /*************************/
