@@ -289,6 +289,7 @@ section h2 {   /* todos los h2 */
 /* ********* Cerfificados ************* */
 #container-documents {
     background-color: #f7d9d1;
+    /* background-color: #EBE6DC; */
     padding-bottom: 30px;
 }
 
@@ -427,9 +428,9 @@ section h2 {   /* todos los h2 */
 }
 
 .container-download h3 {
-    font-size: 34px;
+    font-size: 2em;
     margin-bottom: 60px;
-    color: #0000ff;
+    color: #aa9872;
 }
 
 .button-download {
@@ -460,7 +461,7 @@ section h2 {   /* todos los h2 */
 /* *********** Card de los proyectos ******** */
 #container-proyectos {
     background-color: #e9dae9;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
 }
 
 #container-proyectos h2 {
