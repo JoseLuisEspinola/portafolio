@@ -297,7 +297,7 @@ section h2 {   /* todos los h2 */
 }
 
 .container-certificad {
-    height: 60vh;
+    height: 45vh;
     width: 45%;
     margin: 40px auto 20px;
 
@@ -420,16 +420,15 @@ section h2 {   /* todos los h2 */
 .container-download {
     display: block;
     text-align: center;
-/* 
-    height: 20vh;
+    /* height: 20vh;
     width: 100%; */
 
     margin-bottom: 30px;
 }
 
 .container-download h3 {
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 34px;
+    margin-bottom: 60px;
     color: #0000ff;
 }
 
@@ -448,12 +447,12 @@ section h2 {   /* todos los h2 */
 .button-download a img {
     width: 160px;
     height: 50px;
-    margin: 0 20px;
+    margin: 0 20px 60px;
     transition: 0.5s;
 }
 
 .button-download a img:hover {
-    scale: 1.2;
+    scale: 1.1;
 }
 
 
