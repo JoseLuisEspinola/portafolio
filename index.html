@@ -29,6 +29,7 @@
             <li><a href="#">Inicio</a></li>
             <li><a href="#sobremi">Sobre Mi</a></li>
             <li><a href="#container-slider">Habilidades</a></li>
+            <li><a href="#container-documents">Certificados</a></li>
             <li><a href="#container-proyectos">Proyectos</a></li>
             <li><a href="#section-form">Contacto</a></li>
         </ul>
@@ -70,7 +71,7 @@
         </div>
     </section>
 
-    <!-- Lenguajes - Tecnologias -->
+    <!-- ********* Lenguajes - Tecnologias ********** -->
     <section id="container-slider">
         <h2>Tecnologias adquiridas</h2>
         <div class="slider">
@@ -158,6 +159,63 @@
             </div>
         </div>
     </section>
+
+
+    <!-- ************ Certificados responsive *************** --> 
+    <section id="container-documents">
+        <h2>Certificados</h2>
+        <div class="container-certificad">
+
+            <div class="card-certificad">
+                <div class="title-certificad">
+                    <h3>Full Stack Java</h3>
+                </div>
+                <div class="img-certificad">
+                    <img src="/img/icon_java_certificado.png" alt="Java">
+                </div>
+                <div class="text-certificad">
+                    <p>Realizado en Codo a Codo. Se usó HTML, CSS, BOOTSTRAP, 
+                    JAVASCRIPT, JAVA y MYSQL en el año 2023.</p>
+                    </div>
+                <div class="btn-certificad">
+                    <a href="https://drive.google.com/file/d/168JrL86O8XalKGKuToquRG7OfKLbOEhP/view?usp=sharing" target="_blank">VER</a>
+                </div>
+            </div>
+
+            <div class="card-certificad">
+                <div class="title-certificad">
+                    <h3>Full Stack Python</h3>
+                </div>
+                <div class="img-certificad">
+                    <img src="/img/icon_python_certificado.png" alt="Python">
+                </div>                
+                <div class="text-certificad">
+                    <p>Realizado en Codo a Codo. Se usó HTML, CSS, JAVASCRIPT, 
+                    PYTHON y POSTGRESQL en el año 2024.</p>
+                    </div>
+                <div class="btn-certificad">
+                    <a href="https://drive.google.com/file/d/1KdRXwKaixNvZECdtlVMI5JIVWLJkXzyn/view?usp=sharing" target="_blank">VER</a>
+                </div>
+            </div>
+
+            <div class="card-certificad">
+                <div class="title-certificad">
+                    <h3>Especialización Unity</h3>
+                </div>
+                <div class="img-certificad">
+                    <img src="/img/icon_unity_certificado.png" alt="Unity">
+                </div>                
+                <div class="text-certificad">
+                    <p>Realizado en Codo a Codo. Especialización Unity para Videos Juegos, 
+                    donde se utilizó UNITY y C# en el año 2024</p>
+                    </div>
+                <div class="btn-certificad">
+                    <a href="https://drive.google.com/file/d/1O6bOgkO-Pp_QFtZ6tu5SP9ywZAj4XYbe/view?usp=sharing" target="_blank">VER</a>
+                </div>
+            </div>
+
+        </div>
+    </section>    
 
 
     <!-- ************Card responsive********************* --> 
@@ -282,7 +340,7 @@
         </div>
     </section>
 
-    <!----- FORMULARIO ----->
+    <!-- ********** FORMULARIO ********** -->
     <section id="section-form">
         <h2 class="titulo-form">FORMULARIO DE CONTACTO</h2>
         <!-- <form action="./php/enviar.php" method="post"> -->
@@ -302,7 +360,7 @@
         </form>
     </section>
 
-    <!-- Seccion de footer -->
+    <!-- ********* Seccion de footer ******** -->
     <footer id="piedepagina">
         <p class="contac">Contacto</p>
         <div class="container">
@@ -320,7 +378,7 @@
                 <a href="https://www.facebook.com/joseluis.espinola1" target="_blank" title="Ir a Facebook">
                     <img class="facebook" src="./img/facebook.png" alt="Facebook">
                 </a>
-<!--                 <a href="https://www.instagram.com/jle36/" target="_blank" title="Ir a Instagram">
+           <!-- <a href="https://www.instagram.com/jle36/" target="_blank" title="Ir a Instagram">
                     <img class="instagram" src="./img/instagram.png" alt="Instagram">
                 </a>
                 <a href="https://x.com/jle36" target="_blank" title="Ir a Twitter">
@@ -332,12 +390,12 @@
             </div>
         </div>
 
-        <!-- <p class="copying">&copy; 2024 Portafolio - Todos los derechos reservados - Espinola Jose Luis</p> -->
+        <!-- ******** Copyright ******** -->
         <p class="copyright">&copy; <span id="copyright-year"></span> Portafolio - Todos los derechos reservados - Espinola José Luis</p>
         <script>
             const currentYear = new Date().getFullYear();
             document.getElementById('copyright-year').textContent = currentYear;
-          </script>
+        </script>
 
     </footer>
 

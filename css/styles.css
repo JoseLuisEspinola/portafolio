@@ -284,6 +284,139 @@ section h2 {   /* todos los h2 */
     }
 }
 
+
+/****************************************/
+/* ********* Cerfificados ************* */
+#container-documents {
+    background-color: #f7d9d1;
+    padding-bottom: 30px;
+}
+
+#container-documents h2 {
+    padding-top: 120px;
+}
+
+.container-certificad {
+    height: 40vh;
+    width: 45%;
+    margin: 40px auto 40px;
+
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(min(150px, 100%), 1fr));
+    justify-content: space-evenly;
+    /* align-content: center;
+    justify-items: center; */
+    gap: 2rem;
+
+    /* border: 2px solid #000000; */
+}
+
+.card-certificad {
+    display: grid;
+    grid-template-rows: 18% 12% 50% 20%;
+    align-content:center;
+
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.6);
+    /* background-color: #e0ccf3; */
+    background-color: #e9dcf5;
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+
+    transition: 0.5s;
+    /* border: 4px solid rgb(10, 28, 189); */
+}
+
+.card-certificad:hover {
+    /* background-color: #e9dcf5; */
+    background-color: #e0ccf3;
+    box-shadow: 6px 6px 6px rgb(0, 0, 0, 0.6);
+    transition: 0.5s;
+}
+
+.title-certificad {
+    grid-row: 1/2;
+    padding: 0 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 2px solid red; */
+}
+
+.title-certificad h3 {
+    /* font-size: 28px; */
+    font-size: clamp(1.125rem, 1vw + 0.75rem, 1.75rem);;
+    margin: 0;
+}
+
+.img-certificad {
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 2px solid red; */
+}
+
+.img-certificad img {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+}
+
+.text-certificad {
+    grid-row: 3/4;
+    padding: 10px 16px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    
+    /* border: 2px solid red; */
+}
+
+.text-certificad p {
+    /* font-size: 22px; */
+    font-size: clamp(0.75rem, 1vw + 0.5rem, 1.375rem);;
+    margin: 0;
+}
+
+.btn-certificad {
+    grid-row: 4/5;
+    padding: 0 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 2px solid red; */
+}
+
+.btn-certificad a {
+    border: 1px solid lightslategrey;
+    border-radius: 10px;
+    padding: 6px 16px;
+    /* font-size: 18px; */
+    font-size: (0.625rem, 4vw - 1rem, 1.125rem);
+    color: #ffffff;
+    background-color: lightslategrey;
+}
+
+/* posicionado sobre la card, sin posicionarse en el boton */
+.card-certificad:hover a {
+    border: 1px solid #c99df1;
+    background-color: #c99df1;
+}
+
+.btn-certificad a:hover {
+    border: 1px solid #3198a0;
+    color: #3198a0;
+    background-color: transparent;
+}
+
+
+
 /**********************************************/
 /* *********** Card de los proyectos ******** */
 #container-proyectos {
@@ -390,6 +523,7 @@ section h2 {   /* todos los h2 */
     color: #15a4fa;
     /* background-color: #474646; */
 }
+
 
 /* ************************************************************* */
 /* Texto de formulario */
