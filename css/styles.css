@@ -299,7 +299,7 @@ section h2 {   /* todos los h2 */
 .container-certificad {
     height: 60vh;
     width: 45%;
-    margin: 40px auto 40px;
+    margin: 40px auto 20px;
 
     display: grid;
     grid-template-columns:
@@ -314,12 +314,11 @@ section h2 {   /* todos los h2 */
 
 .card-certificad {
     display: grid;
-    grid-template-rows: 18% 12% 50% 20%;
-    align-content:center;
+    grid-template-rows: 20% 12% 50% 18%;
+    /* align-content:center; */
 
     border-radius: 8px;
     box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.6);
-    /* background-color: #e0ccf3; */
     background-color: #e9dcf5;
     width: 100%;
     max-height: 350px;
@@ -330,7 +329,6 @@ section h2 {   /* todos los h2 */
 }
 
 .card-certificad:hover {
-    /* background-color: #e9dcf5; */
     background-color: #e0ccf3;
     box-shadow: 6px 6px 6px rgb(0, 0, 0, 0.6);
     transition: 0.5s;
@@ -402,6 +400,8 @@ section h2 {   /* todos los h2 */
     font-size: (0.625rem, 4vw - 1rem, 1.125rem);
     color: #ffffff;
     background-color: lightslategrey;
+
+    transition: 0.5s;
 }
 
 /* posicionado sobre la card, sin posicionarse en el boton */
@@ -416,6 +416,45 @@ section h2 {   /* todos los h2 */
     background-color: transparent;
 }
 
+/****** Links de descarga ******/
+.container-download {
+    display: block;
+    text-align: center;
+/* 
+    height: 20vh;
+    width: 100%; */
+
+    margin-bottom: 30px;
+}
+
+.container-download h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #0000ff;
+}
+
+.button-download {
+    display: inline;
+    text-align: center;
+    margin-top: 5px;
+    width: 100px;
+}
+
+/* pequeña trampita, para que este mas lejos de Python */
+.button-download .img3 {
+    margin-left: 20px;
+}
+
+.button-download a img {
+    width: 160px;
+    height: 50px;
+    margin: 0 20px;
+    transition: 0.5s;
+}
+
+.button-download a img:hover {
+    scale: 1.2;
+}
 
 
 /**********************************************/
@@ -717,6 +756,7 @@ footer .copyright {
 
 /*************************************/
 /* ***** Media Query con 858px ***** */
+/*************************************/
 @media (max-width: 858px) {
     .checkbtn {
         display: block;
@@ -783,9 +823,9 @@ footer .copyright {
 }
 
 
-
 /*************************************/
 /* ***** Media Query con 560px ***** */
+/*************************************/
 @media (max-width: 560px) {
     .sobremi-content {
         max-width: 96%;
@@ -793,8 +833,10 @@ footer .copyright {
 }
 
 
+
 /*************************************/
 /* ***** Media Query con 490px ***** */
+/*************************************/
 @media (max-width: 490px) {
     .presentacion h1 {
         font-size: 3rem;
@@ -872,6 +914,11 @@ footer .copyright {
     }
 }
 
+
+
+/*************************************/
+/* ***** Media Query con 430px ***** */
+/*************************************/
 @media (max-width: 430px) {
     .container-certificad {
         height: 80vh;
@@ -884,4 +931,12 @@ footer .copyright {
         margin-bottom: 6px;
         font-size: 10px;
     }
+
+    .button-download a img {
+        width: 120px;
+        height: 30px;
+        margin: 4px 15px;
+        transition: 0.5s;
+    }
+
 }
