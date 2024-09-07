@@ -5,7 +5,7 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
-    box-sizing: border-box;  /* para que los elementos no salgan del contenedor */
+    box-sizing: border-box;
 }
 
 nav {
@@ -28,7 +28,7 @@ nav.abajo {
 
 .enlace {
     position: absolute;
-    padding: 6px 50px 20px;
+    padding: 6px 16px 20px ;
     display: flex;
     align-items: center;
 }
@@ -37,6 +37,7 @@ nav.abajo {
     height: 60px;
     border-radius: 4px;
     margin-right: 20px;
+
     transition: 1s;
 }
 
@@ -46,6 +47,7 @@ nav.abajo {
     font-size: 18px;
     text-transform: uppercase;
     font-size: 1.6rem;
+
     transition: 0.5s;
 } 
 
@@ -119,7 +121,7 @@ nav.abajo ul li a:hover {
 }
 
 img.logo:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     rotate: 360deg;
 }
 
@@ -232,7 +234,7 @@ section h2 {   /* todos los h2 */
 /***************************/
 /* ****** Lenguajes ****** */
 #container-slider {
-    width: 100vw;
+    width: 100%;
     height: 600px;
     display: flex;
     flex-direction: column;
