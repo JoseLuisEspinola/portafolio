@@ -28,17 +28,24 @@ nav.abajo {
 
 .enlace {
     position: absolute;
-    padding: 6px 16px 20px;
+    padding: 8px 16px 20px;
     display: flex;
     align-items: center;
 }
 
 .logo {
     height: 60px;
+    width: 60px;
     border-radius: 4px;
     margin-right: 20px;
 
-    transition: 1s;
+    animation: rotate-logo 4s ease-in-out infinite;
+}
+
+@keyframes rotate-logo {
+    from {
+        transform: rotateY(360deg);
+    }
 }
 
 .main-name {
@@ -120,10 +127,10 @@ nav.abajo ul li a:hover {
     color: #21d5fa;
 }
 
-img.logo:hover {
+/* img.logo:hover {
     transform: scale(1.1);
     rotate: 360deg;
-}
+} */
 
 nav.abajo .main-name {
     color: #ffffff;
