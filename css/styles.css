@@ -42,7 +42,7 @@ nav.abajo {
     animation: rotate-logo 4s ease-in-out infinite;
 }
 
-@keyframes rotate-log {
+@keyframes rotate-logo {
     from {
         transform: rotateY(360deg);
     }
