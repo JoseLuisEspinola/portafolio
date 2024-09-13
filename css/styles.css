@@ -28,7 +28,7 @@ nav.abajo {
 
 .enlace {
     position: absolute;
-    padding: 5px 16px 20px;
+    padding: 8px 16px 20px;
     display: flex;
     align-items: center;
 }
@@ -36,7 +36,7 @@ nav.abajo {
 .logo {
     height: 60px;
     width: 60px;
-    border-radius: 4px;
+    border-radius: 10px;
     margin-right: 20px;
 
     animation: rotate-logo 4s ease-in-out infinite;
@@ -108,7 +108,7 @@ li a:hover:after {
     color: white;
     float: right;
     line-height: 80px;
-    margin-right: 30px;
+    margin-right: 20px;
     cursor: pointer;
     display: none;
 }
@@ -126,11 +126,6 @@ nav.abajo .logo,
 nav.abajo ul li a:hover {
     color: #21d5fa;
 }
-
-/* img.logo:hover {
-    transform: scale(1.1);
-    rotate: 360deg;
-} */
 
 nav.abajo .main-name {
     color: #ffffff;
@@ -543,25 +538,33 @@ section h2 {   /* todos los h2 */
 
 .card-description p {
     color: #666;
-    font-size: 22px;
+    font-size: 20px;
     padding: 10px 0;
     line-height: 1.2;
 }
 
+/* botones de la card */
 .card-btns {
-    grid-row: 4 / 5; /* Botones ocupan la cuarta fila */
-    padding: 16px;
+    grid-row: 4 / 5;
+    padding: 0 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 10px; /* Espacio entre los botones */
 }
 
-.card-btns .btn {
+.btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8px 16px;
+
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    border: 1px solid #333;
+
+    padding: 0.5rem 1rem;
     background-color: #333;
     text-decoration: none;
     border-radius: 4px;
@@ -571,10 +574,34 @@ section h2 {   /* todos los h2 */
     min-width: 100px;   /* podria poner auto, si se requiere */
 }
 
-.card-btns .btn:hover {
-    color: #15a4fa;
+.btn:hover {
+    border: 1px solid #7a8f96;
+    color: #185163;
+    font-weight: bold;
     /* background-color: #474646; */
 }
+
+.btn::after {
+    content: "";
+    background: #7a8f96; /* color de fondo hover */
+    
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0, 0);
+    transition: all 0.35s ease;
+}
+
+.btn:hover::after {
+    transition: all 0.35s ease-out;
+    transform: scale(1, 1);
+  }
+
 
 
 /* ************************************************************* */
@@ -686,6 +713,7 @@ textarea {
     background-color: #15a4fa;
 }
 
+
 /*************************/
 /* ******* Footer ****** */
 footer {
@@ -747,12 +775,17 @@ footer .copyright {
 /* ***** Media Query con 952px ***** */
 @media (max-width: 952px) {
     .enlace {
-        padding-left: 16px;
-        order: 1;
+        padding: 14px 16px;
+        /* order: 1; */
     }
 
-    .nombre {
-        font-size: 18px;
+    .logo {
+        height: 40px;
+        width: 40px;
+    }
+
+    .main-name {
+        font-size: 1.4rem;
     }
     
     nav ul li a {
@@ -829,6 +862,11 @@ footer .copyright {
         font-size: 1.4em;
     }
 
+    .card-description p {
+        font-size: 18px;
+        line-height: 1.1;
+    }
+
     form {
         max-width: 60%;
     }
@@ -873,7 +911,7 @@ footer .copyright {
         font-size: 30px;
     }
 
-/*     p.historiamia {
+    /*  p.historiamia {
         font-size: 1.8rem;
     }
     
@@ -881,10 +919,23 @@ footer .copyright {
         font-size: 1.7rem;
     } */
 
+    .card {
+        grid-template-rows: 48% 10% 30% 12%;
+        height: 400px;
+    }
+
+    .card-title h3 {
+        font-size: 22px;
+    }
+    
     .card-description p {
-        color: #666;
         font-size: 15px;
         line-height: 1.1;
+    }
+
+    .btn {
+        padding: 0.3rem 1rem;
+         min-width: 80px;
     }
 
     section h2,
