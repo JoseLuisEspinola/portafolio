@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+/* html {
+    scroll-behavior: smooth;
+} */
+
 nav {
     position: fixed;
     top: 0;
@@ -304,7 +308,7 @@ section h2 {   /* todos los h2 */
 
 .container-certificad {
     height: 45vh;
-    width: 45%;
+    width: 50%;
     margin: 40px auto 20px;
 
     display: grid;
@@ -335,7 +339,7 @@ section h2 {   /* todos los h2 */
 }
 
 .card-certificad:hover {
-    background-color: #e0ccf3;
+    background-color: #e1d0f1;
     box-shadow: 6px 6px 6px rgb(0, 0, 0, 0.6);
     transition: 0.5s;
 }
@@ -376,6 +380,7 @@ section h2 {   /* todos los h2 */
     padding: 10px 16px;
     display: flex;
     justify-content: center;
+    text-align: justify;
     /* align-items: center; */
     
     /* border: 2px solid red; */
@@ -412,8 +417,8 @@ section h2 {   /* todos los h2 */
 
 /* posicionado sobre la card, sin posicionarse en el boton */
 .card-certificad:hover a {
-    border: 1px solid #c99df1;
-    background-color: #c99df1;
+    border: 1px solid #49028b;
+    background-color: #49028b;
 }
 
 .btn-certificad a:hover {
