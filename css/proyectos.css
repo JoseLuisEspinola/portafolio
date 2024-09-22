@@ -484,6 +484,15 @@ p.contac {
 .linkedin, .github, .facebook, .whatsapp {
     width: 36px;
     height: 36px;
+    border-radius: 50px;
+
+    transition: 0.5s;
+}
+
+.linkedin:hover, .github:hover,
+.facebook:hover, .whatsapp:hover {
+    /* background-color: #ffffff; */
+    box-shadow: 1px 1px 14px 0 #abacaf, -1px -1px 14px 0 #abacaf;
 }
 
 footer .copyright {
