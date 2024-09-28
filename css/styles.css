@@ -66,6 +66,7 @@ nav.abajo {
         transform: rotateY(0deg);
     }
 }
+
 .main-name {
     color:#21d5fa;
     font-weight: bold; /* negrita */
@@ -158,7 +159,7 @@ nav.abajo .main-name:hover {
     background: url(../img/fondo19.jpg) no-repeat;   /* Es para que sea SOLO una imagen */
     background-size: cover;
     background-position: center center;
-    height: calc(100vh - 100px);
+    /* height: calc(100vh - 100px); */
 
     /* nuevo */
     width: 100%;
@@ -307,137 +308,113 @@ section h2 {   /* todos los h2 */
 }
 
 
-/****************************************/
-/* ********* Cerfificados ************* */
-#container-documents {
+/* *************************************** */
+/* ********** Certificados 3d ************ */
+#container-certificad {
     background-color: #f7d9d1;
     /* background-color: #EBE6DC; */
     padding-bottom: 30px;
 }
 
-#container-documents h2 {
+#container-certificad h2 {
     padding-top: 120px;
 }
 
-.container-certificad {
-    height: 45vh;
-    width: 50%;
-    margin: 40px auto 20px;
-
-    display: grid;
-    grid-template-columns:
-        repeat(auto-fit, minmax(min(150px, 100%), 1fr));
-    justify-content: space-evenly;
-    /* align-content: center;
-    justify-items: center; */
-    gap: 2rem;
-
-    /* border: 2px solid #000000; */
+.container-card3d {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    justify-content: center;
+    min-height: auto;
+    padding: 10px;
+    /* background-color: rgb(18, 80, 138); */
+    gap: 16px;
 }
 
-.card-certificad {
-    display: grid;
-    grid-template-rows: 20% 12% 50% 18%;
-    /* align-content:center; */
+.card3d {
+    position: relative;
+    width: 300px;
+    height: 350px;
+}
 
-    border-radius: 8px;
-    box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.6);
-    background-color: #e9dcf5;
+.card3d .face {
+    position: absolute;
     width: 100%;
-    max-height: 350px;
-    overflow: hidden;
-
-    transition: 0.5s;
-    /* border: 4px solid rgb(10, 28, 189); */
-}
-
-.card-certificad:hover {
-    background-color: #e1d0f1;
-    box-shadow: 6px 6px 6px rgb(0, 0, 0, 0.6);
-    transition: 0.5s;
-}
-
-.title-certificad {
-    grid-row: 1/2;
-    padding: 0 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    /* border: 2px solid red; */
-}
-
-.title-certificad h3 {
-    /* font-size: 28px; */
-    font-size: clamp(1.125rem, 1vw + 0.75rem, 1.6rem);
-    margin: 0;
-}
-
-.img-certificad {
-    grid-row: 2/3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    /* border: 2px solid red; */
-}
-
-.img-certificad img {
-    width: 30px;
-    height: 30px;
-    margin: 0;
-}
-
-.text-certificad {
-    grid-row: 3/4;
-    padding: 10px 16px;
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    
-    /* border: 2px solid red; */
-}
-
-.text-certificad p {
-    /* font-size: 22px; */
-    font-size: clamp(0.75rem, 1vw + 0.5rem, 1.3rem);;
-    margin: 0;
-    text-align: justify;
-}
-
-.btn-certificad {
-    grid-row: 4/5;
-    padding: 0 16px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-
-    /* border: 2px solid red; */
-}
-
-.btn-certificad a {
-    border: 1px solid lightslategrey;
+    height: 100%;
+    backface-visibility: hidden;
     border-radius: 10px;
-    padding: 6px 16px;
-    margin-bottom: 10px;
-    /* font-size: 18px; */
-    font-size: (0.625rem, 4vw - 1rem, 1.125rem);
-    color: #ffffff;
-    background-color: lightslategrey;
-
-    transition: 0.5s;
+    overflow: hidden;
+    transition: 1s;
 }
 
-/* posicionado sobre la card, sin posicionarse en el boton */
-.card-certificad:hover a {
-    border: 1px solid #49028b;
-    background-color: #49028b;
+.card3d .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000000;
 }
 
-.btn-certificad a:hover {
-    border: 1px solid #3198a0;
-    color: #3198a0;
-    background-color: transparent;
+.card3d .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card3d .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    font-size: 26px;
+    line-height: 45px;
+    color: #00eeff;
+    background-color: rgba(85, 106, 107, 0.4);
+    text-align: center;
+}
+
+.card3d .back {
+    transform: perspective(600px) rotateY(180deg);
+    background-color: rgb(4, 46, 70);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000000;
+}
+
+.card3d .back .link {
+    border-top: 1px solid #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card3d .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card3d .back p {
+    font-size: 1.2rem;
+    /* letter-spacing: 1px; */
+}
+
+.card3d .back .link a {
+    font-size: 1.2rem;
+    color: #f3f3f3;
+}
+
+.card3d .back .link a:hover {
+    color: #0ef;
+}
+
+.card3d:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card3d:hover .back {
+    transform: perspective(600px) rotateY(360deg);
 }
 
 /****** Links de descarga ******/
@@ -446,15 +423,13 @@ section h2 {   /* todos los h2 */
     text-align: center;
     /* height: 20vh;
     width: 100%; */
-
     margin-bottom: 30px;
 }
 
 .container-download h2 {
     /* font-size: 2em; */   /* los h2 ya tiene el tamaño, aqui le cambiamos el color */
-
     margin-bottom: 60px;
-    color: #aa9872;
+    color: #86785a;
 }
 
 .button-download {
@@ -484,7 +459,7 @@ section h2 {   /* todos los h2 */
 /**********************************************/
 /* *********** Card de los proyectos ******** */
 #container-proyectos {
-    background-color: #e9dae9;
+    background-color: #f7e9f7;
     padding-bottom: 60px;
 }
 
