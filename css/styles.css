@@ -344,7 +344,8 @@ section h2 {   /* todos los h2 */
     backface-visibility: hidden;
     border-radius: 10px;
     overflow: hidden;
-    transition: 1s;
+
+    transition: 1.5s;
 }
 
 .card3d .front {
@@ -367,7 +368,8 @@ section h2 {   /* todos los h2 */
     font-size: 26px;
     line-height: 45px;
     color: #00eeff;
-    background-color: rgba(85, 106, 107, 0.4);
+    /* background-color: rgba(85, 106, 107, 0.4); */
+    background-color: rgba(255, 255, 255, 0.3);
     text-align: center;
 }
 
@@ -397,16 +399,20 @@ section h2 {   /* todos los h2 */
 
 .card3d .back p {
     font-size: 1.2rem;
-    /* letter-spacing: 1px; */
+    /* text-align: justify; */
+    letter-spacing: 1px;
 }
 
 .card3d .back .link a {
+    /* border-radius: 5px;
+    border: 1px solid #0ef; */
+    padding: 8px 16px;
     font-size: 1.2rem;
     color: #f3f3f3;
 }
 
 .card3d .back .link a:hover {
-    color: #0ef;
+    color: #00eeff;
 }
 
 .card3d:hover .front {
