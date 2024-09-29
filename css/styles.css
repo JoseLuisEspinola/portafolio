@@ -328,7 +328,7 @@ section h2 {   /* todos los h2 */
     min-height: auto;
     padding: 10px;
     /* background-color: rgb(18, 80, 138); */
-    gap: 16px;
+    gap: 1.6rem;
 }
 
 .card3d {
@@ -349,7 +349,7 @@ section h2 {   /* todos los h2 */
 
 .card3d .front {
     transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 5px 10px #000000;
+    box-shadow: 4px 5px 10px #000000;
 }
 
 .card3d .front img {
@@ -380,7 +380,7 @@ section h2 {   /* todos los h2 */
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    box-shadow: 0 5px 10px #000000;
+    box-shadow: -4px 5px 10px #000000;
 }
 
 .card3d .back .link {
