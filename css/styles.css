@@ -380,7 +380,7 @@ section h2 {   /* todos los h2 */
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    box-shadow: -4px 5px 10px #000000;
+    box-shadow: 4px 5px 10px #000000;
 }
 
 .card3d .back .link {
