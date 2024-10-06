@@ -855,7 +855,6 @@ footer .copyright {
 /* ***** Media Query con 858px ***** */
 /*************************************/
 @media (max-width: 858px) {
-
     .presentacion h1 {
         font-size: 4rem;
         
@@ -939,7 +938,6 @@ footer .copyright {
 
     .card {
         grid-template-rows: 48% 10% 30% 12%;
-        height: 400px;
     }
 
     .card-title h3 {
