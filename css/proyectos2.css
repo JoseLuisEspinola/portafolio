@@ -172,30 +172,123 @@ nav.abajo .main-name:hover {
 }
 
 .presentacion {
+    min-width: 29.5%;
     max-width: 100%;
     text-align: center;
-}
-  
-.presentacion h1 {
-    color: #ed761a;
-    font-size: 5.8rem;
-    margin-bottom: 20px;
-    text-shadow: 6px 4px #070707;
     
-    /* fotograma */
-    animation: slide-in 18s infinite;
-    animation-timing-function: linear;
+    /* border: 1px solid white; */
 }
 
-/* **** Fotograma de LA INFORMATICA, presentacion h1 **** */
-@keyframes slide-in {
-    from {
-        transform: translateX(180%);
+.presentacion p {
+    display:flex;
+    justify-content:flex-start;
+    color: #ffffff;
+}
+/* El titulo de: PROYECTOS */
+.pre {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    align-items: center;
+    text-wrap: nowrap;
+    white-space: pre;
+    background-color: transparent;
+    overflow: hidden;
+    box-sizing: border-box;
+    
+    font-size: 5.8rem;
+    margin-bottom: 20px;
+    color: #ed761a;
+}
+
+.pre code:nth-child(1) {
+    color: #ed761a; 
+}
+
+.pre code:nth-child(2) {
+    color: #e34ba9;
+}
+
+.cmd {
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 6px 4px #7e7d7d;
+    
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.cmd::before {
+    content: attr(data-cmd);
+    position: relative;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: transparent;
+
+    animation: inputs 6s steps(56) infinite;
+}
+
+.cmd::after {
+    content: "";
+    position: relative;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    background-color: transparent;
+    border-right: 0.15em solid #e34ba9;
+
+    animation: cursor 0.5s step-end infinite alternate, blinking 0.5s infinite;
+}
+  
+@keyframes blinking {
+    20%, 80% {
+      transform: scaleY(1);
     }
-    to {
-        transform: translateX(-220%);
+    
+    50% {
+      transform: scaleY(0);
     }
 }
+
+@keyframes cursor {
+    50% {
+      border-right-color: transparent;
+    }
+}
+
+@keyframes inputs {
+    0% {
+      width: 0;
+    }
+
+    15% {
+      width: 275px;
+    }
+
+    30% {
+      width: 550px;
+      max-width: max-content;
+    }
+
+    70% {
+        width: 550px;
+        max-width: max-content;
+    }
+
+    85% {
+        width: 275px;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+/* Fin titulo de PROYECTOS */
+
 
 .opc-proyectos {
     display: flex;
@@ -213,7 +306,6 @@ nav.abajo .main-name:hover {
 .opc-proyectos a:hover {
     color: #f177cd;
 }
-
 
 .flecha-arriba{
     bottom: 4px;
@@ -442,48 +534,6 @@ nav.abajo .main-name:hover {
 }
 
 .card5 img {
-    height: 100%;
-    width: 100%;
-}
-
-
-/**********************************************/
-/* ******** Seccion CONTROL DE STOCK ******** */
-.container6 {
-    width: 100%;
-    background-color: #919caf;
-    padding-top: 120px;
-    padding-bottom: 100px;
-}
-
-.card-container6 {
-    width: 90%;
-    margin: 0 auto;
-
-    display: grid;
-    grid-template-columns:
-        repeat(auto-fit, minmax(min(420px, 100%), 1fr));
-    gap: 2.2em;
-}
-
-.card6 {
-    margin: 0 auto;
-    border-radius: 8px;
-    box-shadow: 7px 7px 4px rgba(34, 34, 34, 0.6);
-    background-color: #f0f0f0;
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-    overflow: hidden;
-
-    transition: 0.5s;
-}
-
-.card6:hover {
-    scale: 1.1;
-}
-
-.card6 img {
     height: 100%;
     width: 100%;
 }
