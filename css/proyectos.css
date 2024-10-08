@@ -629,13 +629,8 @@ footer .copyright {
         }
     }
     
-    .ol-proyectos .li-proyectos {
-        line-height: 30px;
-    }
-
-    .ol-proyectos .li-proyectos a {
-        font-size: 1.4em;
-        text-transform: none;
+    .opc-proyectos a {
+        font-size: 1.4rem;
     }
 }
 
@@ -658,12 +653,6 @@ footer .copyright {
         to {
             transform: translateX(-120%);
         }
-    }
-    
-    .presentacion p {
-        color: white;
-        font-weight: 300;
-        font-size: 30px;
     }
 
     /* ************************** */
@@ -701,23 +690,8 @@ footer .copyright {
         height: 40px;
         width: 40px;
     }
-    
-    .container-certificad {
-        height: 86vh;
-        width: 66%;
-        gap: 1.5rem;
-    }
 
-    .btn-certificad a {
-        padding: 2px 16px;
-        margin-bottom: 6px;
-        font-size: 10px;
-    }
-
-    .button-download a img {
-        width: 120px;
-        height: 30px;
-        margin: 4px 15px;
-        transition: 0.5s;
+    .opc-proyectos a {
+        font-size: 1.2rem;
     }
 }
