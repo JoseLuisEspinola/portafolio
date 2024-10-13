@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Ccompatible" content="IE-edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="Imagen/jpg" href="/img/NewSoft.jpg">
     <link rel="stylesheet" href="./css/styles.css">
@@ -36,7 +36,7 @@
     </nav>
 
     <!-- JavaScript donde se captura la parte de arriba de la pagina: header-->
-    <script type="text/javascript">
+    <script>
         window.addEventListener("scroll", function(){
             var header = document.querySelector("nav");
             header.classList.toggle("abajo", window.scrollY>0);
@@ -401,7 +401,6 @@
             <p class="anotate">Puedes hacerme llegar tu inquietud a traves de <abbr title="attribute">este</abbr> formulario!</p>
             <input class="nombre" type="text" name="Nombre" placeholder="Nombre" pattern="[a-zA-Z' ]*" required>
             <input class="apellido" type="text" name="Apellido" placeholder="Apellido" pattern="[a-zA-Z' ]*" required>
-            <!-- <input type="tel" name="Telefono" pattern="\d{3}-\d{4}-\d{4}" placeholder="Telefono" required> --->
             <input type="tel" name="Telefono" placeholder="Telefono" pattern="[a-zA-Z0-9' ]*" required>
             <input class="email" type="email" name="email" placeholder="Correo" minlength="8" required>
             <textarea name="mensaje" placeholder="Escriba aqui su mensaje" minlength="8" required></textarea>
@@ -437,7 +436,7 @@
                 <a href="https://x.com/jle36" target="_blank" title="Ir a Twitter">
                     <img class="twitter" src="./img/Twitter.png" alt="Twitter">
                 </a> -->
-                <a href="https://api.whatsapp.com/send?phone=+543487616158&text=Hola, me gustaría realizar una página web... podrías contarme?" target="_blank" title="Ir a Whatsapp">
+                <a href="https://api.whatsapp.com/send?phone=+543487616158&text=Hola%2C%20me%20gustaría%20realizar%20una%20página%20web...%20podrías%20contarme?" target="_blank" title="Ir a Whatsapp">
                     <img class="whatsapp" src="./img/Whatsapp.png" alt="Whatsapp">
                 </a>
             </div>

@@ -16,7 +16,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    justify-content: space-arround;
+    display: inline-block;
     transition: 0.7s;
     /* padding: 16px 10px; */
     height: 90px;
