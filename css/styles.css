@@ -696,20 +696,25 @@ textarea {
     font-size: clamp(0.938rem, 3vw, 1.125rem);
 }
 
-#boton {
+.btns-form {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-f {
     cursor: pointer;
-    font-size: clamp(1rem, 2vw + 0.25rem, 1.125rem);
+    font-size: clamp(0.8rem, 2vw + 0.25rem, 1.125rem);
     text-align: center;  /* si el boton fuese type="button" quedaria en el centro, pero como es type="subnit" no queda en el centro */
     color: #fff;
     background: transparent;
-    border: 0.1px solid #15a4fa;
+    border: 1px solid #15a4fa;
     margin-bottom: 14px;
-    padding: 10px;
+    padding: 6px;
 
     transition: 0.4s;
 }
 
-#boton:hover {
+.btn-f:hover {
     color: #ffffff;
     background-color: #15a4fa;
 }
