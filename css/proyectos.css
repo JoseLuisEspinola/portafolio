@@ -258,7 +258,7 @@ nav.abajo .main-name:hover {
 .card1 {
     margin: 0 auto;
     border-radius: 8px;
-    box-shadow: 7px 7px 4px rgba(34, 34, 34, 0.6);
+    box-shadow: 5px 5px 4px rgba(34, 34, 34, 0.6);
     background-color: #f0f0f0;
     width: 100%;
     /* max-height: 300px; */
@@ -270,7 +270,8 @@ nav.abajo .main-name:hover {
 }
 
 .card1:hover {
-    scale: 1.06;
+    scale: 1.05;
+    box-shadow: 6px 6px 8px rgba(34, 34, 34, 0.6);
 }
 
 .card1 img {
@@ -302,7 +303,7 @@ nav.abajo .main-name:hover {
 .card2 {
     margin: 0 auto;
     border-radius: 8px;
-    box-shadow: 7px 7px 4px rgba(34, 34, 34, 0.6);
+    box-shadow: 5px 5px 4px rgba(34, 34, 34, 0.6);
     background-color: #f0f0f0;
     width: 100%;
     /* max-height: 300px; */
@@ -314,7 +315,8 @@ nav.abajo .main-name:hover {
 }
 
 .card2:hover {
-    scale: 1.1;
+    scale: 1.05;
+    box-shadow: 6px 6px 8px rgba(34, 34, 34, 0.6);
 }
 
 .card2 img {
@@ -346,7 +348,7 @@ nav.abajo .main-name:hover {
 .card3 {
     margin: 0 auto;
     border-radius: 8px;
-    box-shadow: 7px 7px 4px rgba(34, 34, 34, 0.6);
+    box-shadow: 5px 5px 4px rgba(34, 34, 34, 0.6);
     background-color: #f0f0f0;
     width: 100%;
     /* max-height: 300px; */
@@ -358,7 +360,8 @@ nav.abajo .main-name:hover {
 }
 
 .card3:hover {
-    scale: 1.1;
+    scale: 1.05;
+    box-shadow: 6px 6px 8px rgba(34, 34, 34, 0.6);
 }
 
 .card3 img {
@@ -391,7 +394,7 @@ nav.abajo .main-name:hover {
 .card4 {
     margin: 0 auto;
     border-radius: 8px;
-    box-shadow: 7px 7px 4px rgba(34, 34, 34, 0.6);
+    box-shadow: 5px 5px 4px rgba(34, 34, 34, 0.6);
     background-color: #f0f0f0;
     width: 100%;
     /* max-height: 300px; */
@@ -403,7 +406,8 @@ nav.abajo .main-name:hover {
 }
 
 .card4:hover {
-    scale: 1.1;
+    scale: 1.05;
+    box-shadow: 6px 6px 8px rgba(34, 34, 34, 0.6);
 }
 
 .card4 img {
@@ -436,7 +440,7 @@ nav.abajo .main-name:hover {
 .card5 {
     margin: 0 auto;
     border-radius: 8px;
-    box-shadow: 7px 7px 4px rgba(34, 34, 34, 0.6);
+    box-shadow: 5px 5px 4px rgba(34, 34, 34, 0.6);
     background-color: #f0f0f0;
     width: 100%;
     /* max-height: 300px; */
@@ -448,7 +452,8 @@ nav.abajo .main-name:hover {
 }
 
 .card5:hover {
-    scale: 1.1;
+    scale: 1.05;
+    box-shadow: 6px 6px 8px rgba(34, 34, 34, 0.6);
 }
 
 .card5 img {
@@ -480,7 +485,7 @@ nav.abajo .main-name:hover {
 .card6 {
     margin: 0 auto;
     border-radius: 8px;
-    box-shadow: 7px 7px 4px rgba(34, 34, 34, 0.6);
+    box-shadow: 5px 5px 4px rgba(34, 34, 34, 0.6);
     background-color: #f0f0f0;
     width: 100%;
     /* max-height: 300px; */
@@ -492,7 +497,8 @@ nav.abajo .main-name:hover {
 }
 
 .card6:hover {
-    scale: 1.1;
+    scale: 1.05;
+    box-shadow: 6px 6px 8px rgba(34, 34, 34, 0.6);
 }
 
 .card6 img {
